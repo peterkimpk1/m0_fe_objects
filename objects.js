@@ -14,18 +14,20 @@ var foods = {
 // Write code that prints all of the 'keys' of the foods variable 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.keys(foods));
 // Write code that prints all of the 'values' of the foods variable 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.values(foods));
 // Write code that prints the value of the second food of the foods variable 
 // you created above:
 // YOUR CODE HERE
-
+console.log(foods.grapes);
 // Write code that adds a food to the foods object. 
 // Then, print the updated object:
 // YOUR CODE HERE
+foods.bananas = 5;
+console.log(foods);
 
 
 // -------------------
@@ -38,19 +40,23 @@ var foods = {
 
 // Declare a variable that stores an object. Each key should be an attribute of an email and each
 // value should be some appropriate value for that key. Work to have at least 5 key-value pairs.
-
+var emailFormat = {
+  sender: "petersgmail@gmail.com",
+  receiver: "turingschool@gmail.com", 
+  subject: "My code isn't working..", 
+  attachment: './images/notworking.png', 
+  footer: "Sincerely, Peter Kim"
+}
 // Write code that logs your email object to the terminal.
-
-
+console.log(emailFormat);
 // Write code that logs all of the 'keys' of the email object 
 // you created above:
 // YOUR CODE HERE
-
+console.log(Object.keys(emailFormat));
 // Write code that logs all of the 'values' of the email object 
 // you created above:
 // YOUR CODE HERE
-
-
+console.log(Object.values(emailFormat));
 // -------------------
 // Part 3: Many Emails - CHALLENGE!
 // -------------------
@@ -99,3 +105,27 @@ console.log(posts[0]);
 // YOU DO: Create an array of at least 3 EMAIL Objects, using the same 
 // key-value pairs you used in your email Object above.
 // Then, print the email Array to the Terminal.
+emails = [
+  {
+    sender: "Petersemail@gmail.com",
+    receiver: "FBI@government.gov",
+    subject: "Investigating Computer Science",
+    attachment: "./images/CSparty.png",
+    footer: "Best, Peter"
+  },
+  {
+    sender: "Geico@geico.com",
+    receiver: "Peterspersonal@gmail.com",
+    subject: "Click here to get your free Credit Score check!",
+    attachment: "./images/scorecheck.png",
+    footer: "From Geico, with love"
+  },
+  {
+    sender: "Educationreform@gmail.com",
+    receiver: "Peterkim@gmail.com",
+    subject: "Please consider a donation to the education reform foundation.",
+    attachment: "./images/sadcatface.png",
+    footer: "Please"
+  }
+]
+console.log(emails);
